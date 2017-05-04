@@ -7,4 +7,7 @@ function ($scope, $stateParams) {
 
 
 }])
+.controller('fesseCtrl', ['$scope', '$stateParams', function() {
+    console.warn('fesse initialized!');
+}]);
  
