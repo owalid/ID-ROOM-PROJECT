@@ -17,7 +17,7 @@ angular.module('app.routes', [])
     controller: 'fesseCtrl'
   });
 
-$urlRouterProvider.otherwise('/page1')
+$urlRouterProvider.otherwise('fesse')
 
   
 
