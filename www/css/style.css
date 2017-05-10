@@ -44,7 +44,7 @@
             }
             #filo:after {
                 content: " ";
-                left: -5px;
+                left: -3.25px;
                 top: 100%;
                 position: absolute;
                 border-bottom: 15px solid #000000;
