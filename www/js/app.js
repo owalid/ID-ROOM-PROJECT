@@ -9,6 +9,7 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.directives
 
 .config(function($ionicConfigProvider, $sceDelegateProvider){
   
+  
   ionic.Platform.setPlatform("android");
 
   $sceDelegateProvider.resourceUrlWhitelist([ 'self','*://www.youtube.com/**', '*://player.vimeo.com/video/**']);
@@ -57,9 +58,70 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.directives
     };
 }])
 
+
+.directive('fesse', function(){
+
+    return{
+            restrict : 'A',
+            replace:true,
+            transclude:true,
+            scope: {mot1 : '='},
+            template :"fesse",
+            link: function($scope){
+             
+                  $scope.generate = function () {
+
+                              var obj = ['Snake',
+                        'Tetris', 
+                        'Stocks',
+                        'Bloc-notes',
+                        'Dictaphone',
+                        'Galeries',
+                        'Chat',
+                        'Météo',
+                        'Horloge',
+                        'Restaurants',
+                        'Films',
+                        'Transports',
+                        'Gastronomie',
+                        'Sport',
+                        'Télévision',
+                        'Musique',
+                        'Art',
+                        'Littérature ',
+                        'Espace',
+                        'Science',
+                        'Langues',
+                        'Culture',
+                        'Réseaux',
+                        'Base de données',
+                        'Interfaces',
+                        'E-Commerce',
+                        'Publicité',
+                        'Partage',
+                        'Méditation',
+                        'Planning',
+                        'Architecture',
+                        'Design',
+                        'Finance',
+                        'Localisation',
+                        'Photographie',
+                        'Dance',
+                        'Ephémère',
+                        'Nature'];
+
+                      $scope.mot1 = obj[Math.floor(Math.random() * obj.length)];
+
+         };                 
+       }
+     };
+  });
+
+
+
 /*
   This directive is used to open regular and dynamic href links inside of inappbrowser.
-*/
+
 .directive('hrefInappbrowser', function() {
   return {
     restrict: 'A',
@@ -83,3 +145,4 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.directives
     }
   };
 });
+*/
