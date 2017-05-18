@@ -1,7 +1,7 @@
 #fesse {
-	font-family: Georgia, serif;
-                font-style: italic;
-                font-size: 4.2vmin;
+	font-family: Georgia, serif;            
+                
+                font-size: 35px;
                 line-height: 4.7vmin;
                 color: rgba(255,255,255,0.6);
                 margin: 0;
@@ -16,7 +16,16 @@
                background: linear-gradient(to bottom, rgba(66,39,71,1) 0%, rgba(43,25,46,1) 73%, rgba(19,11,20,1) 100%);
             }
             a {
+                position: relative;
+                font-family: segoe ui;
+                position:absolute;
+                bottom:120px;
                 color: rgba(255,255,255,0.6);
+                margin-left: 50px;
+                text-align: justify-all;
+                vertical-align: center;
+               
+                 
             }
             #lampadario {
                 position: fixed;
@@ -195,6 +204,7 @@
                      -o-animation: ombraTesto .9s ease-in-out 0s infinite alternate;
                         animation: ombraTesto .9s ease-in-out 0s infinite alternate;
             }
+            
             @-webkit-keyframes oscillaFilo {
                 from {
                     -webkit-transform:rotate(5deg);
@@ -302,6 +312,7 @@
                     transform: translate(-1px,0px) scale(1.01,1.06) skew(-0.9deg, 0deg);
                 }
             }
+
 
                 
 /* Empty. Add your own CSS if you like */
