@@ -2,9 +2,12 @@
 
 
     <ion-content id="fesse" scroll="false" class="padding" >
-
+    <div class="bar bar-header bar-positive">
+      <h1 class="title">ID ROOM PROJECT</h1>
+    </div>
         <!-- Only required for Tab projects w/ pages in multiple tabs-->
         <!--<script src="lib/ionicuirouter/ionicUIRouter.js"></script>-->
+
         <!--////////////////////-->
         <!--background + ampoule-->
         <!--////////////////////-->
@@ -19,7 +22,7 @@
 
                     <div id="sorpresa">
                         <div id="footer">
-                            
+                        
 
                         </div>
                         <div id="shadow">
@@ -30,25 +33,30 @@
             
         
     </ion-content>
-    <ion-content padding="true" class="has-header">
+    <ion-content padding="true"  scroll="false" class="has-header">
     <div id="page-container1" class="creator-container"></div>
     <div id="page-container2" class="creator-container"></div>
 <div style="position: absolute; bottom: 100px; width: 100%;">
 
         <div class="padding">
             <div ng-controller="fesseCtrl" >
-                <div id="mot1" style="position: absolute; bottom: 180px; width: 100%;  margin-right : -10px;">
-                <a>{{mot1}}</a>
+                <div id= "mot">
+                    <div id="mot1" style="position: absolute; bottom: 180px; width: 100%;  margin-right : -10px;"> 
+                        <div id='arrondi1'>
+                            <a>{{mot1}}</a>
+                            <div id='arondi2'>
+                            <div id="mot2" style="position: absolute; bottom: 80px; width: 100%;">
+                             <a> {{mot2}}</a>
+                            </div>  
+                        </div>
                 </div>
-            <div id="mot2" style="position: absolute; bottom: 80px; width: 100%;">
-                 <a> {{mot2}}</a>
              </div>
         </div>
-</div>
       <button id="page-button1" style="left:-10px; border-radius:-5px -5px -5px -5px;" class="button button-light button-block clear icon-left ion-ios-lightbulb-outline;" ng-click="generate()"> Generate</button>
       
         </div>
     </div>
+
     <!--
     <button id="page-button2" style="position: absolute; bottom: 40px; width: 60%; margin-left:-5px;" class="button button-light  button-block icon-left ion-android-share-alt">Partager</button>-->
   </ion-content>

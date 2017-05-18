@@ -1,5 +1,5 @@
-#fesse {
-	font-family: Georgia, serif;            
+        #fesse {
+	           font-family: Georgia, serif;            
                 
                 font-size: 35px;
                 line-height: 4.7vmin;
@@ -15,16 +15,25 @@
                 background: -ms-linear-gradient(top, rgba(66,39,71,1) 0%, rgba(43,25,46,1) 73%, rgba(19,11,20,1) 100%);
                background: linear-gradient(to bottom, rgba(66,39,71,1) 0%, rgba(43,25,46,1) 73%, rgba(19,11,20,1) 100%);
             }
+       
             a {
                 position: relative;
                 font-family: segoe ui;
                 position:absolute;
-                bottom:120px;
+                bottom:-20px;
                 color: rgba(255,255,255,0.6);
                 margin-left: 50px;
                 text-align: justify-all;
                 vertical-align: center;
-               
+              
+                 border: solid;
+                 border-color: rgba(255,255,255,0.6);
+                 border-width: 2px;
+                 padding-bottom: 15px;
+                 padding-top: 10px;
+                 border-left:5px;
+                 border-right: 5px;
+                 
                  
             }
             #lampadario {
@@ -315,4 +324,5 @@
 
 
                 
-/* Empty. Add your own CSS if you like */
+
+
