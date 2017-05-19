@@ -10,6 +10,9 @@ function ($scope, $stateParams) {
 .controller('fesseCtrl', ['$scope', '$stateParams', function($scope) {
     console.warn('fesse initialized!');
 
+
+
+    
     
   $scope.generate = function () {
 
