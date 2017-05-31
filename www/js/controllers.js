@@ -7,11 +7,12 @@ function ($scope, $stateParams) {
 
 
 }])
-.controller('fesseCtrl', ['$scope', '$stateParams', function($scope) {
+
+
+.controller('fesseCtrl', ['$scope', '$stateParams', function($scope, $cordovaSocialSharing) {
     console.warn('fesse initialized!');
 
-
-
+    
     
     
   $scope.generate = function () {
@@ -88,11 +89,26 @@ function ($scope, $stateParams) {
 
                       $scope.mot1 = obj[Math.floor(Math.random() * obj.length)];
                       $scope.mot2 = obj2[Math.floor(Math.random() * obj2.length)];
-
-		              
-
          };                 
  	
+
+    	$scope.share = function(){
+
+    		var options ={
+
+    			message:  "Regarde mon début d'idée de projet : " + $scope.mot1 + " " + $scope.mot2,
+ 				subject : "projet idée"
+    		}
+
+    	window.plugins.socialsharing.shareWithOptions(
+    		options,
+    		function(){console.log("Partage OK")},
+    		function(err){console.log("Partage KO :", err)
+    		});
+    	
+    	};
+   
+
 
 
 
