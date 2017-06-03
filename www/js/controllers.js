@@ -55,7 +55,50 @@ function ($scope, $stateParams) {
 				                        'Ephémère',
 				                        'Nature'];
 
-                         var obj2 =['Théorie',
+                         var obj2 =[
+							    ];
+
+                      $scope.mot1 = obj[Math.floor(Math.random() * obj.length)];
+                      $scope.mot2 = obj2[Math.floor(Math.random() * obj2.length)];
+         };                 
+ 	
+ 	
+         //fonction share
+    	$scope.share = function(){
+
+    		var options ={
+
+    			message:  "Regarde mon début d'idée de projet : " + $scope.mot1 + " " + $scope.mot2,
+ 				subject : "projet idée"
+    		}
+
+    	window.plugins.socialsharing.shareWithOptions(
+    		options,
+    		function(){console.log("Partage OK")},
+    		function(err){console.log("Partage KO :", err)
+    		});
+    	
+    	};
+
+    	//function add
+    	$scope.add = function(){
+
+    		if ($scope.text) {
+
+          	obj2.push(this.text);
+          	$scope.text = '';
+        }
+    		
+    };
+
+   
+    
+}]);
+
+
+ 
+ 
+/*value obj2:'Théorie',
 									  'Séries',
 									  'Mode',
 									  'Déplacement',
@@ -83,40 +126,4 @@ function ($scope, $stateParams) {
 									  'Spiritualité', 
 									  'Surnaturel',
 									  'Soins',
-									  'Santé'
-							    ];
-
-                      $scope.mot1 = obj[Math.floor(Math.random() * obj.length)];
-                      $scope.mot2 = obj2[Math.floor(Math.random() * obj2.length)];
-         };                 
- 	
- 	
-         //fonction share
-    	$scope.share = function(){
-
-    		var options ={
-
-    			message:  "Regarde mon début d'idée de projet : " + $scope.mot1 + " " + $scope.mot2,
- 				subject : "projet idée"
-    		}
-
-    	window.plugins.socialsharing.shareWithOptions(
-    		options,
-    		function(){console.log("Partage OK")},
-    		function(err){console.log("Partage KO :", err)
-    		});
-    	
-    	};
-  
-    	/*fonction add mot ?
-    	$scope.add = function(){
-    		obj2[obj.length + 1] = $scope;
-    	}*/
-
-   
-    
-}]);
-
-
- 
- 
+									  'Santé'*/
