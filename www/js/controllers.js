@@ -13,8 +13,7 @@ function ($scope, $stateParams) {
     console.warn('fesse initialized!');
 
     
-    
-    
+    //fonction random   
   $scope.generate = function () {
 
                               var obj = ['Snake',
@@ -67,7 +66,7 @@ function ($scope, $stateParams) {
 									  'Transferts',
 									  'Technologie',
 									  'Calendrier',
-									  'Mathématiques',
+									  'Mathématiques'	,
 									  'Gestion',
 									  'Paris',
 									  'Définitions',
@@ -91,7 +90,8 @@ function ($scope, $stateParams) {
                       $scope.mot2 = obj2[Math.floor(Math.random() * obj2.length)];
          };                 
  	
-
+ 	
+         //fonction share
     	$scope.share = function(){
 
     		var options ={
@@ -107,12 +107,13 @@ function ($scope, $stateParams) {
     		});
     	
     	};
+  
+    	/*fonction add mot ?
+    	$scope.add = function(){
+    		obj2[obj.length + 1] = $scope;
+    	}*/
+
    
-
-
-
-
-    
     
 }]);
 
