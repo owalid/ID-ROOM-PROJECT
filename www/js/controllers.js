@@ -9,8 +9,21 @@ function ($scope, $stateParams) {
 }])
 
 
-.controller('fesseCtrl', ['$scope', '$stateParams', function($scope, $cordovaSocialSharing) {
+.controller('fesseCtrl', ['$scope', '$stateParams','$ionicModal', function($scope, $cordovaSocialSharing, $ionicModal) {
     console.warn('fesse initialized!');
+
+	     $ionicModal.fromTemplateUrl('templates/modal.html', {
+    scope: $scope
+  }).then(function(modal) {
+    $scope.modal = modal;
+  });
+  
+  $scope.createContact = function(u) {        
+    $scope.obj2.push(u.firstName );
+    u.firstName = '';
+    $scope.modal.hide();
+  };
+
  						$scope.obj = ['Snake',
 				                        'Tetris', 
 				                        'Stocks',
@@ -50,27 +63,54 @@ function ($scope, $stateParams) {
 				                        'Ephémère',
 				                        'Nature'];
 
-                         $scope.obj2 =[ ];
+                         $scope.obj2 =['Théorie',
+									  'Séries',
+									  'Mode',
+									  'Déplacement',
+									  'Tourisme',
+									  'Simulateur',
+									  'Bon plan',
+									  'Cartographie',
+									  'Transferts',
+									  'Technologie',
+									  'Calendrier',
+									  'Mathématiques',
+									  'Gestion',
+									  'Paris',
+									  'Définitions',
+									  'Histoire',
+									  'Recherche',
+									  'Article',
+									  'Sécurité',
+									  'Objet',
+									  'Réalité',
+									  'Virtuel',
+									  'Imaginaire',
+									  'Automobiles',
+									  'Spiritualité', 
+									  'Surnaturel',
+									  'Soins',
+									  'Santé'];
 
 						 
 
-		    	//function add
-  // $scope.add = function(){
+/*		    	function add
+  $scope.add = function(){
     	
-  //      if($scope.text){
+       if($scope.text){
 
-  //      	$scope.obj2[$scope.obj2.length] = $scope.text;
-  //      	 $scope.obj2.push($scope.text);
-  //      	 $scope.text = '';
-  //      	console.log($scope.obj2[0]);
+       	$scope.obj2[$scope.obj2.length] = $scope.text;
+       	 $scope.obj2.push($scope.text);
+       	 $scope.text = '';
+       	console.log($scope.obj2[0]);
 
-  //      }
-      //obj3[obj3.length]=$scope.text;          	
+       }
+      obj3[obj3.length]=$scope.text;          	
        
 
     
     		
-    //};
+    };*/
     
     	//fonction random   
   $scope.generate = function () {

@@ -1,9 +1,6 @@
-<ion-view view-title="ID ROOM PROJECT">
-<link href="css/style.css" rel="stylesheet">
+<ion-view view-title="ID ROOM PROJECT" id="fesseid">
 
-
-     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    
+    <link href="css/style.css" rel="stylesheet">
     <ion-content id="fesse" scroll="false" class="padding">
 
         <!--////////////////////-->
@@ -45,13 +42,11 @@
             <!--////// word1 random //////-->
                     <div id="mot1" style="position: absolute; bottom: 180px; width: 100%;  margin-right : -10px;"> 
                             <a>{{mot1}}</a>
-                           
+                                                       
             <!--////// word2 random //////-->
                             <div id="mot2" style="position: absolute; bottom: 80px; width: 100%;">
                              <a>{{mot2}}</a>
-                            </div>  
-
-           
+                            </div>           
                         </div>
                 </div>
              </div>
@@ -66,5 +61,17 @@
            <!--////// Button Share //////--> 
     
    <button id="page-button2" style="position: absolute; bottom: 40px; width: 60%; margin-left:75px;" class="button button-light  button-block icon-left ion-android-share-alt; "ng-click="share()">Partager</button> 
+
+         <!--////// Button add mot//////--> 
+    
+    <button id="add-mot" style="position: absolute; bottom: 200px; width: 60%; margin-left:75px;" class="button button-light  button-block icon-left ion-android-share-alt; " ng-click="modal.show()">add mot</button>
+
+
+     
+
+
+
   </ion-content>
+
+    
 </ion-view>
