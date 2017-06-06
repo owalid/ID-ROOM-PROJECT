@@ -1,4 +1,5 @@
 <ion-view view-title="ID ROOM PROJECT">
+<link href="css/style.css" rel="stylesheet">
 
 
      <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
@@ -19,8 +20,8 @@
 
         <div class="ampoule">
             <div id="lampadario">
-                <input type="radio" name="switch" value="on" />
-                <input type="radio" name="switch" value="off" checked="checked"/>
+                <input id="radio" type="radio" name="switch" value="on" />
+                <input id="radio" type="radio" name="switch" value="off" checked="checked"/>
                 <label for="switch"></label>
                 <div id="filo"></div>
                 <div id="lampadina">
@@ -47,8 +48,10 @@
                            
             <!--////// word2 random //////-->
                             <div id="mot2" style="position: absolute; bottom: 80px; width: 100%;">
-                             <a> {{mot2}}</a>
+                             <a>{{mot2}}</a>
                             </div>  
+
+           
                         </div>
                 </div>
              </div>

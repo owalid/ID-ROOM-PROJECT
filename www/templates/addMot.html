@@ -1,28 +1,29 @@
 <ion-view view-title="Ajouter un mot">
- <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-
-<link href="css/ionic.app.css" rel="stylesheet">
 
     <ion-content id= "addMot" padding="true"  scroll="false" class="has-header">
 
     <div class="padding">
-         <div id="add">
-
-             
     
             
-            <form (ngSubmit)="add()" ng-controller="fesseCtrl">
-                <ion-item>
+            <form ng-submit="obj2.push(text)" ng-controller="fesseCtrl">
+            <div class="form">
+               
+                <label class="item item-input">
+                <span class="input-label">mot</span>
+                 <input type="text" id="text" name="text" ng-model="text">
+            </div>
+               <!-- <ion-item>
 
                 <ion-label stacked color="positive">mot à ajouter</ion-label>
-                 <ion-input [(ngModel)]="text" type="text"></ion-input>
+                 <ion-input ng-model="text" type="text"></ion-input>
 
                     
-            </ion-item>
+            </ion-item> -->
 
              <button id="addBtn" style="left:-10px; border-radius:-5px -5px -5px -5px;" class="button button-positive button-block clear icon-left ion-ios-lightbulb-outline;" type="submit">Ajouter !</button>
+
          </form>
-        </div>
+       
     </div>
 </ion-content>
 </ion-view>	

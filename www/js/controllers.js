@@ -11,12 +11,7 @@ function ($scope, $stateParams) {
 
 .controller('fesseCtrl', ['$scope', '$stateParams', function($scope, $cordovaSocialSharing) {
     console.warn('fesse initialized!');
-
-    
-    //fonction random   
-  $scope.generate = function () {
-
-                              var obj = ['Snake',
+ 						$scope.obj = ['Snake',
 				                        'Tetris', 
 				                        'Stocks',
 				                        'Bloc-notes',
@@ -55,16 +50,41 @@ function ($scope, $stateParams) {
 				                        'Ephémère',
 				                        'Nature'];
 
-                         var obj2 =[
-							    ];
+                         $scope.obj2 =[ ];
 
-                      $scope.mot1 = obj[Math.floor(Math.random() * obj.length)];
-                      $scope.mot2 = obj2[Math.floor(Math.random() * obj2.length)];
+						 
+
+		    	//function add
+  // $scope.add = function(){
+    	
+  //      if($scope.text){
+
+  //      	$scope.obj2[$scope.obj2.length] = $scope.text;
+  //      	 $scope.obj2.push($scope.text);
+  //      	 $scope.text = '';
+  //      	console.log($scope.obj2[0]);
+
+  //      }
+      //obj3[obj3.length]=$scope.text;          	
+       
+
+    
+    		
+    //};
+    
+    	//fonction random   
+  $scope.generate = function () {
+		
+       
+                      $scope.mot1 = $scope.obj2[Math.floor(Math.random() * $scope.obj2.length)];
+                      $scope.mot2 = $scope.obj[Math.floor(Math.random() * $scope.obj.length)];
+                      // $scope.mot3 = obj3[Math.floor(Math.random() * obj3.length)];
+
          };                 
  	
  	
          //fonction share
-    	$scope.share = function(){
+  $scope.share = function(){
 
     		var options ={
 
@@ -80,16 +100,7 @@ function ($scope, $stateParams) {
     	
     	};
 
-    	//function add
-    	$scope.add = function(){
 
-    		if ($scope.text) {
-
-          	obj2.push(this.text);
-          	$scope.text = '';
-        }
-    		
-    };
 
    
     
@@ -109,13 +120,12 @@ function ($scope, $stateParams) {
 									  'Transferts',
 									  'Technologie',
 									  'Calendrier',
-									  'Mathématiques'	,
+									  'Mathématiques',
 									  'Gestion',
 									  'Paris',
 									  'Définitions',
 									  'Histoire',
 									  'Recherche',
-									  'Histoire',
 									  'Article',
 									  'Sécurité',
 									  'Objet',
@@ -126,4 +136,5 @@ function ($scope, $stateParams) {
 									  'Spiritualité', 
 									  'Surnaturel',
 									  'Soins',
-									  'Santé'*/
+									  'Santé'
+							    ];*/

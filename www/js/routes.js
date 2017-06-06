@@ -12,6 +12,8 @@ angular.module('app.routes', [])
     
   })
 
+ 
+
   .state('about', {
     url: '/about',
       templateUrl: 'templates/about.html',
@@ -21,7 +23,7 @@ angular.module('app.routes', [])
   .state('addmot', {
     url:'/addmot',
       templateUrl: 'templates/addMot.html',
-      
+
     })
 
 
