@@ -12,7 +12,7 @@ function ($scope, $stateParams) {
 .controller('fesseCtrl', ['$scope', '$stateParams','$ionicModal', function($scope, $cordovaSocialSharing, $ionicModal) {
     console.warn('fesse initialized!');
 
-	     $ionicModal.fromTemplateUrl('templates/modal.html', {
+	     $ionicModal.fromTemplateUrl('templates/modalAddmot.html', {
     scope: $scope
   }).then(function(modal) {
     $scope.modal = modal;

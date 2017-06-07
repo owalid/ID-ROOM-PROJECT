@@ -1,6 +1,6 @@
 
 
-       #fesseid > #fesse {
+        #fesse {
 	            font-family: Georgia, serif;            
                 font-size: 35px;
                 line-height: 4.7vmin;
@@ -44,12 +44,12 @@
                  
             }
 
-           #fesseid > #lampadario {
+           #lampadario {
                 position: fixed;
                 left: 50%;
                 top: 0;
             }
-           #fesseid > #filo {
+           #filo {
                 position: relative;
                 background-color: #000000;
                 width: 2px;
@@ -68,7 +68,7 @@
                      -o-animation: oscillaFilo .9s ease-in-out 0s infinite alternate;
                         animation: oscillaFilo .9s ease-in-out 0s infinite alternate;
             }
-           #fesseid > #filo:after {
+            #filo:after {
                 content: " ";
                 left: -3.25px;
                 top: 100%;
@@ -79,19 +79,19 @@
                 height: 0;
                 width: 4px;
             }
-           #fesseid > #lampadina {
+            #lampadina {
                 position:relative;
             }
-           #fesseid > input[value="off"]:checked ~
-            #filo {
+           .fesseid input[value="off"]:checked ~
+             #filo {
                 -webkit-box-shadow: -80px -10px 7px 0 rgba(0,0,0,0.1);
                    -moz-box-shadow: -80px -10px 7px 0 rgba(0,0,0,0.1);
                     -ms-box-shadow: -80px -10px 7px 0 rgba(0,0,0,0.1);
                      -o-box-shadow: -80px -10px 7px 0 rgba(0,0,0,0.1);
                         box-shadow: -80px -10px 7px 0 rgba(0,0,0,0.1);
             }
-           #fesseid > input[value="off"]:checked ~
-            #filo:after {
+            .fesseid input[value="off"]:checked ~
+             #filo:after {
                 -webkit-box-shadow: -80px -10px 10px -2px rgba(0,0,0,0.1);
                    -moz-box-shadow: -80px -10px 10px -2px rgba(0,0,0,0.1);
                     -ms-box-shadow: -80px -10px 10px -2px rgba(0,0,0,0.1);
@@ -99,7 +99,7 @@
                         box-shadow: -80px -10px 10px -2px rgba(0,0,0,0.1);
             }
             
-           #fesseid > input {
+           .fesseid input {
                 position: absolute;
                 width: 90px;
                 height: 70px;
@@ -110,20 +110,10 @@
                 cursor: pointer;
             }
             
-           #fesseid > input[value="on"] {
-                top: 150px;
-            }
-            #fesseid >input[value="off"] {
-                top: -100px;
-            }
-           #fesseid > input[value="on"]:checked {
-                top: -100px;
-            }
-           #fesseid > input[value="on"]:checked + #fesseid >input[value="off"] {
-                top: 150px;
-            }
+           
             
-           #fesseid > label {
+            
+          .fesseid label {
                 width: 51px;
                 height: 51px;
                 top: 164px;
@@ -141,7 +131,7 @@
                      -o-animation: oscillaLampadina .9s ease-in-out 0s infinite alternate;
                         animation: oscillaLampadina .9s ease-in-out 0s infinite alternate;
             }           
-            #fesseid >input[value="off"]:checked ~
+          .fesseid input[value="off"]:checked ~
             label {
                 background: rgba(255,255,255,0.03);
                 -webkit-box-shadow: inset 0px 1px 5px rgba(255,255,255,0.1), inset 0px 2px 20px rgba(255,255,255,0.07), -80px -15px 15px -5px rgba(0,0,0,0.1);
@@ -150,47 +140,24 @@
                      -o-box-shadow: inset 0px 1px 5px rgba(255,255,255,0.1), inset 0px 2px 20px rgba(255,255,255,0.07), -80px -15px 15px -5px rgba(0,0,0,0.1);
                         box-shadow: inset 0px 1px 5px rgba(255,255,255,0.1), inset 0px 2px 20px rgba(255,255,255,0.07), -80px -15px 15px -5px rgba(0,0,0,0.1);
             }
-            #fesseid >input[value="on"]:checked ~
-            label {
-                background: rgba(255,255,255,1);
-                -webkit-box-shadow: 0px 0px 10px rgba(255,255,255,0.8), 0px 0px 30px rgba(255,255,255,0.8), 0px 0px 50px rgba(255,255,255,0.6), 0px 0px 70px rgba(255,255,255,0.6), -80px -15px 120px 0px rgba(255,255,255,0.4);
-                   -moz-box-shadow: 0px 0px 10px rgba(255,255,255,0.8), 0px 0px 30px rgba(255,255,255,0.8), 0px 0px 50px rgba(255,255,255,0.6), 0px 0px 70px rgba(255,255,255,0.6), -80px -15px 120px 0px rgba(255,255,255,0.4);
-                    -ms-box-shadow: 0px 0px 10px rgba(255,255,255,0.8), 0px 0px 30px rgba(255,255,255,0.8), 0px 0px 50px rgba(255,255,255,0.6), 0px 0px 70px rgba(255,255,255,0.6), -80px -15px 120px 0px rgba(255,255,255,0.4);
-                     -o-box-shadow: 0px 0px 10px rgba(255,255,255,0.8), 0px 0px 30px rgba(255,255,255,0.8), 0px 0px 50px rgba(255,255,255,0.6), 0px 0px 70px rgba(255,255,255,0.6), -80px -15px 120px 0px rgba(255,255,255,0.4);
-                        box-shadow: 0px 0px 10px rgba(255,255,255,0.8), 0px 0px 30px rgba(255,255,255,0.8), 0px 0px 50px rgba(255,255,255,0.6), 0px 0px 70px rgba(255,255,255,0.6), -80px -15px 120px 0px rgba(255,255,255,0.4);
-            }
+          
 
-           #fesseid > input[value="off"]:checked ~
-            label:after {
-                content: " ";
-                width: 15px;
-                height: 15px;
-                top: 0;
-                position: absolute;
-                left: 0;
-                margin-left: 15px;
-                -webkit-border-radius: 100%;
-                   -moz-border-radius: 100%;
-                    -ms-border-radius: 100%;
-                     -o-border-radius: 100%;
-                        border-radius: 100%;
-                border: 2px solid rgba(255,255,255,0.03);
-            }
-           #fesseid > #sorpresa {
+            
+            #sorpresa {
                 position: fixed;
                 top: 0;
                 left: 0;
                 width: 100%;
             }
            #fesseid > input[value="off"]:checked ~
-            #lampadina #sorpresa {
+             #lampadina #sorpresa {
                 opacity: 0;
             }
            #fesseid > input[value="on"]:checked ~
-            #lampadina #sorpresa {
+             #lampadina #sorpresa {
                 opacity: 1;
             }
-           #fesseid > #footer {
+           #footer {
                 position: fixed;
                 width: 94%;
                 text-align: center;
@@ -198,7 +165,7 @@
                 padding: 0 3%;
                 z-index:1;
             }
-           #fesseid > #shadow {
+            #shadow {
                 position: fixed;
                 width: 94%;
                 text-align: center;
@@ -222,35 +189,35 @@
                         animation: ombraTesto .9s ease-in-out 0s infinite alternate;
             }
             
-          #fesseid >  @-webkit-keyframes oscillaFilo {
+            @-webkit-keyframes oscillaFilo {
                 from {
                     -webkit-transform:rotate(5deg);
                 } to {
                     -webkit-transform:rotate(-5deg);
                 }
             }
-          #fesseid >  @-moz-keyframes oscillaFilo {
+            @-moz-keyframes oscillaFilo {
                 from {
                     -moz-transform:rotate(5deg);
                 } to {
                     -moz-transform:rotate(-5deg);
                 }
             }
-          #fesseid >  @-ms-keyframes oscillaFilo {
+            @-ms-keyframes oscillaFilo {
                 from {
                     -ms-transform:rotate(5deg);
                 } to {
                     -ms-transform:rotate(-5deg);
                 }
             }
-          #fesseid >  @-o-keyframes oscillaFilo {
+            @-o-keyframes oscillaFilo {
                 from {
                     -o-transform:rotate(5deg);
                 } to {
                     -o-transform:rotate(-5deg);
                 }
             }
-          #fesseid >  @keyframes oscillaFilo {
+            @keyframes oscillaFilo {
                 from {
                     transform:rotate(5deg);
                 } to {
@@ -258,35 +225,35 @@
                 }
             }
             
-           #fesseid > @-webkit-keyframes oscillaLampadina {
+            @-webkit-keyframes oscillaLampadina {
                 from {
                     -webkit-transform: rotate(3deg) translate(-16.4px,-1px);
                 } to {
                     -webkit-transform: rotate(-3deg) translate(16.4px,-1px);
                 }
             }
-           #fesseid > @-moz-keyframes oscillaLampadina {
+            @-moz-keyframes oscillaLampadina {
                 from {
                     -moz-transform: rotate(3deg) translate(-16.4px,-1px);
                 } to {
                     -moz-transform: rotate(-3deg) translate(16.4px,-1px);
                 }
             }
-           #fesseid > @-ms-keyframes oscillaLampadina {
+            @-ms-keyframes oscillaLampadina {
                 from {
                     -ms-transform: rotate(3deg) translate(-16.4px,-1px);
                 } to {
                     -ms-transform: rotate(-3deg) translate(16.4px,-1px);
                 }
             }
-           #fesseid > @-o-keyframes oscillaLampadina {
+            @-o-keyframes oscillaLampadina {
                 from {
                     -o-transform: rotate(3deg) translate(-16.4px,-1px);
                 } to {
                     -o-transform: rotate(-3deg) translate(16.4px,-1px);
                 }
             }
-           #fesseid > @keyframes oscillaLampadina {
+            @keyframes oscillaLampadina {
                 from {
                     transform: rotate(3deg) translate(-16.4px,-1px);
                 } to {
@@ -294,35 +261,35 @@
                 }
             }
             
-           #fesseid > @-webkit-keyframes ombraTesto {
+            @-webkit-keyframes ombraTesto {
                 from {
                     -webkit-transform: translate(1px,0px) scale(1.01,1.06) skew(0.9deg, 0deg);
                 } to {
                     -webkit-transform: translate(-1px,0px) scale(1.01,1.06) skew(-0.9deg, 0deg);
                 }
             }
-           #fesseid > @-moz-keyframes ombraTesto {
+            @-moz-keyframes ombraTesto {
                 from {
                     -moz-transform: translate(1px,0px) scale(1.01,1.06) skew(0.9deg, 0deg);
                 } to {
                     -moz-transform: translate(-1px,0px) scale(1.01,1.06) skew(-0.9deg, 0deg);
                 }
             }
-           #fesseid > @-ms-keyframes ombraTesto {
+            @-ms-keyframes ombraTesto {
                 from {
                     -ms-transform: translate(1px,0px) scale(1.01,1.06) skew(0.9deg, 0deg);
                 } to {
                     -ms-transform: translate(-1px,0px) scale(1.01,1.06) skew(-0.9deg, 0deg);
                 }
             }
-          #fesseid >  @-o-keyframes ombraTesto {
+            @-o-keyframes ombraTesto {
                 from {
                     -o-transform: translate(1px,0px) scale(1.01,1.06) skew(0.9deg, 0deg);
                 } to {
                     -o-transform: translate(-1px,0px) scale(1.01,1.06) skew(-0.9deg, 0deg);
                 }
             }
-           #fesseid > @keyframes ombraTesto {
+            @keyframes ombraTesto {
                 from {
                     transform: translate(1px,0px) scale(1.01,1.06) skew(0.9deg, 0deg);
                 } to {
