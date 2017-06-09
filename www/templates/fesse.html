@@ -1,25 +1,14 @@
 <ion-view view-title="ID ROOM PROJECT" class="fesseid">
-
     <link href="css/style.css" rel="stylesheet">
     <ion-content id="fesse" scroll="false" class="padding">
 
-        <!--////////////////////-->
-        <!--////// Header //////-->
-        <!--////////////////////
-
-    <div class="bar bar-header bar-positive">
-      <h1 class="title">ID ROOM PROJECT</h1>
-    </div>-->
 
         <!--////////////////////-->
         <!--background + ampoule-->
         <!--////////////////////-->
-
         <div class="ampoule">
-            <div id="lampadario">
-                
+            <div id="lampadario">               
                 <input id="radio" type="radio" name="switch" value="off" checked="checked"/>
-
                 <label  for="switch"></label>
                 <div id="filo"></div>
                 <div id="lampadina">
@@ -30,10 +19,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            
-        
+            </div>     
+
     </ion-content>
+
     <ion-content padding="true"  scroll="false" class="has-header">
     <div style="position: absolute; bottom: 100px; width: 100%;">
         <div class="padding">
@@ -52,27 +41,19 @@
                 </div>
              </div>
         </div>
-
+<div class="padding">
             <!--////// Button generate //////-->
-      <button id="page-button1" style="left:-10px; border-radius:-5px -5px -5px -5px;" class="button button-light button-block clear icon-left ion-ios-lightbulb-outline;" ng-click="generate()">Generate</button>
-      
+      <button id="page-button1" style="left:-10px; border-radius:-5px -5px -5px -5px;" class="button button-online button-light button-block clear icon-left ion-ios-lightbulb-outline" ng-click="generate()">Générer</button>      
         </div>
     </div>
 
            <!--////// Button Share //////--> 
-    
-   <button id="page-button2" style="position: absolute; bottom: 40px; width: 60%; margin-left:75px;" class="button button-light  button-block icon-left ion-android-share-alt; "ng-click="share()">Partager</button> 
+   <button id="page-button2" style="position: absolute;left:-65px; bottom: 40px; width: 40%; margin-left:270px;" class="button button-outline button-light  button-block icon-left ion-android-share-alt "ng-click="share()">Partager</button> 
+</div>
+         <!--////// Button add mot//////-->    
+    <button id="add-mot" style="position: absolute;  bottom: 50px;margin-left:20px; " class="button  button-outline button-light icon-left ion-plus " ng-click="openModal(2)">Mot</button>
 
-         <!--////// Button add mot//////--> 
-    
-    <button id="add-mot" style="position: absolute; bottom: 200px; width: 60%; margin-left:75px;" class="button button-light  button-block icon-left ion-android-share-alt; " ng-click="modal.show()">add mot</button>
-
-
-     
-
-
-
-  </ion-content>
-
-    
+  </ion-content> 
 </ion-view>
+<!--  -->
+<!--  -->

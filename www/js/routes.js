@@ -12,22 +12,12 @@ angular.module('app.routes', [])
     
   })
 
- 
-
   .state('about', {
     url: '/about',
       templateUrl: 'templates/about.html',
     
   })
 
-  .state('addmot', {
-    url:'/addmot',
-      templateUrl: 'templates/addMot.html',
-
-    })
-
-
- 
  .state('fesse', {
     url: '/fesse',
     templateUrl: 'templates/fesse.html',
@@ -35,7 +25,5 @@ angular.module('app.routes', [])
   });
 
 $urlRouterProvider.otherwise('fesse');
-
-
 
 });
