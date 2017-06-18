@@ -33,17 +33,6 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.directives
 
 
 /*
-.directive('addMot',function(){
-  return{
-          restrict:'A',
-          scope:{text},
-          template:"addmot",
-          link:function($scope){
-
-          }
-  };
-})*/
-/*
   This directive is used to disable the "drag to open" functionality of the Side-Menu
   when you are dragging a Slider component.
 */
@@ -69,24 +58,6 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.directives
         }]
     };
 }])
-
-
-//generate directive
-.directive('fesse', function(){
-
-    return{
-            restrict : 'A',
-            replace:true,
-            transclude:true,
-            scope: {mot1 : '='},
-            template :"fesse",
-            link: function($scope){
-             
-                  
-       }
-     };
-  })
-
 
 
  // This directive is used to open regular and dynamic href links inside of inappbrowser.

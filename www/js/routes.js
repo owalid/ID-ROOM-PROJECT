@@ -6,9 +6,9 @@ angular.module('app.routes', [])
   // Learn more here: https://github.com/angular-ui/ui-router
   // Set up the various states which the app can be in.
   // Each state's controller can be found in controllers.js
-  $stateProvider.state('historique', {
-    url: '/historique',
-    templateUrl: 'templates/historique.html',
+  $stateProvider.state('contact', {
+    url: '/contact',
+    templateUrl: 'templates/contact.html',
     
   })
 
@@ -18,12 +18,12 @@ angular.module('app.routes', [])
     
   })
 
- .state('fesse', {
-    url: '/fesse',
-    templateUrl: 'templates/fesse.html',
-    controller: 'fesseCtrl'
+ .state('Home', {
+    url: '/Home',
+    templateUrl: 'templates/Home.html',
+    controller: 'HomeCtrl'
   });
 
-$urlRouterProvider.otherwise('fesse');
+$urlRouterProvider.otherwise('Home');
 
 });

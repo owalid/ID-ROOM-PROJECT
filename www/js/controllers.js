@@ -9,7 +9,7 @@ function ($scope, $stateParams) {
 }])
 
 
-.controller('fesseCtrl', ['$scope', '$stateParams','$ionicModal','$timeout', function($scope, $cordovaSocialSharing, $ionicModal,$timeout) {
+.controller('HomeCtrl', ['$scope', '$stateParams','$ionicModal','$timeout', function($scope, $cordovaSocialSharing, $ionicModal,$timeout) {
     console.warn('fesse initialized!');
 
   
@@ -17,7 +17,7 @@ function ($scope, $stateParams) {
 
     	/*\\\\\\\\modal start\\\\\\\*/
      $ionicModal.fromTemplateUrl('templates/modalstart.html', {  
-		  	index: '1',
+		  	id: '1',
 		       scope2: $scope,
 		    animation: 'slide-in-up'
 		  }).then(function(modal) {
@@ -31,7 +31,7 @@ function ($scope, $stateParams) {
 
     	/*\\\\\\\Modal add word\\\\\\\*/
 	     $ionicModal.fromTemplateUrl('templates/modaladdmot.html', {
-				 index: '2', 
+				 id: '2', 
 		    scope: $scope,
 		    animation: 'slide-in-up'
 		  }).then(function(modal) {
@@ -43,7 +43,7 @@ function ($scope, $stateParams) {
 		    u.firstName = '';
 		    $scope.modal2.hide();
 		  };
-
+ 
 
   /*\\\\\\\\\\\\open and close modal1 and 2\\\\\\\\\\\\*/
    $scope.openModal = function(index) {
@@ -56,7 +56,7 @@ function ($scope, $stateParams) {
       else if(index == 2) $scope.modal2.hide();
     };
 
-  		/*\\\\\\\\\\\\word 1\\\\\\\\\\\\*/
+  		/*\\\\\\\\\\\\ word 1 \\\\\\\\\\\\*/
  						$scope.obj = ['Snake',
 				                        'Tetris', 
 				                        'Stocks',
@@ -96,7 +96,7 @@ function ($scope, $stateParams) {
 				                        'Ephémère',
 				                        'Nature'];
 
-		/*\\\\\\\\\\\\word 2\\\\\\\\\\\\*/
+		/*\\\\\\\\\\\\ word 2 \\\\\\\\\\\\*/
                          $scope.obj2 =[
                          'Théorie',
 									  'Séries',
@@ -128,16 +128,16 @@ function ($scope, $stateParams) {
 									  'Santé'
 									  ];
 
-//\\\\\\\\\\\\function\\\\\\\\\\\\//	
+//\\\\\\\\\\\\ function \\\\\\\\\\\\//	
 
 
-    	//\\\\\\\\\\\\function random\\\\\\\\\\\\//   
+    	//\\\\\\\\\\\\ function random \\\\\\\\\\\\//   
   $scope.generate = function () {      
                       $scope.mot1 = $scope.obj2[Math.floor(Math.random() * $scope.obj2.length)];
                       $scope.mot2 = $scope.obj[Math.floor(Math.random() * $scope.obj.length)];
          };                 
  	 	
-         //\\\\\\\\\\\\function share\\\\\\\\\\\\//
+         //\\\\\\\\\\\\ function share \\\\\\\\\\\\//
   $scope.share = function(){
 
     		var options ={
